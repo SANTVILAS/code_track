@@ -4,5 +4,5 @@
 /**
  * 
  */
-module array_bible {
+module array_bibal {
 }
