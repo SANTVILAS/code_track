@@ -4,75 +4,85 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
-    private String name;
-    private int gradeLevel;
-    private double gpa;
-    private String gender;
-    List<String> activities = new ArrayList<>();
+	private String name;
+	private int gradeLevel;
+	private double gpa;
+	private String gender;
+	List<String> activities = new ArrayList<>();
+	private int notebook;
 
-    public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
-        this.name = name;
-        this.gradeLevel = gradeLevel;
-        this.gpa = gpa;
-        this.gender = gender;
-        this.activities = activities;
-    }
+	/*
+	 * public Student(String name, int gradeLevel, double gpa, String gender,
+	 * List<String> activities) { this.name = name; this.gradeLevel = gradeLevel;
+	 * this.gpa = gpa; this.gender = gender; this.activities = activities; }
+	 */
 
-    public String getGender() {
-        return gender;
-    }
+	public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities, int notebook) {
+		super();
+		this.name = name;
+		this.gradeLevel = gradeLevel;
+		this.gpa = gpa;
+		this.gender = gender;
+		this.activities = activities;
+		this.notebook = notebook;
+	}
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
+	public String getGender() {
+		return gender;
+	}
 
-    public String getName() {
-        return name;
-    }
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+	public String getName() {
+		return name;
+	}
 
-    public int getGradeLevel() {
-        return gradeLevel;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    public void setGradeLevel(int gradeLevel) {
-        this.gradeLevel = gradeLevel;
-    }
+	public int getGradeLevel() {
+		return gradeLevel;
+	}
 
-    public double getGpa() {
-        return gpa;
-    }
+	public void setGradeLevel(int gradeLevel) {
+		this.gradeLevel = gradeLevel;
+	}
 
-    public void setGpa(double gpa) {
-        this.gpa = gpa;
-    }
+	public double getGpa() {
+		return gpa;
+	}
 
-    public void printListOfActivities(){
-        System.out.println(this.activities);
-    }
+	public void setGpa(double gpa) {
+		this.gpa = gpa;
+	}
 
+	public void printListOfActivities() {
+		System.out.println(this.activities);
+	}
 
-    public List<String> getActivities() {
-        return activities;
-    }
+	public List<String> getActivities() {
+		return activities;
+	}
 
-    public void setActivities(List<String> activities) {
-        this.activities = activities;
-    }
+	public void setActivities(List<String> activities) {
+		this.activities = activities;
+	}
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", gradeLevel=" + gradeLevel +
-                ", gpa=" + gpa +
-                ", gender='" + gender + '\'' +
-                ", activities=" + activities +
-                '}';
-    }
+	public int getNotebook() {
+		return notebook;
+	}
 
+	public void setNotebook(int notebook) {
+		this.notebook = notebook;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [name=" + name + ", gradeLevel=" + gradeLevel + ", gpa=" + gpa + ", gender=" + gender
+				+ ", activities=" + activities + ", notebook=" + notebook + "]";
+	}
 
 }
